@@ -31,13 +31,12 @@ class FcmService {
       requestCriticalPermission: false,
     );
 
-
     // Windows settings
     const WindowsInitializationSettings windowsInitializationSettings =
-      WindowsInitializationSettings(
-        appName: "Atomic Task",
-        appUserModelId: "AtomicBlend.Task",
-        guid: "7d39570f-4bf8-428f-95e5-d37ada5d96ba",
+        WindowsInitializationSettings(
+      appName: "Atomic Calendar",
+      appUserModelId: "AtomicBlend.Calendar",
+      guid: "7d39570f-4bf8-428f-95e5-d37ada5d96ba",
     );
 
     const InitializationSettings initSettings = InitializationSettings(

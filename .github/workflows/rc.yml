@@ -250,7 +250,7 @@ jobs:
           context: .
           file: Dockerfile-prod
           platforms: linux/amd64,linux/arm64
-          push: false
+          push: true
           tags: |
             ghcr.io/atomic-blend/calendar-app:${{ needs.release-rc.outputs.tag }}
   create-github-release:
