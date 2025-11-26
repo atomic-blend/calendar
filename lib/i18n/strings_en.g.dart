@@ -3,12 +3,13 @@
 ///
 // coverage:ignore-file
 // ignore_for_file: type=lint, unused_import
+// dart format off
 
 part of 'strings.g.dart';
 
 // Path: <root>
 typedef TranslationsEn = Translations; // ignore: unused_element
-class Translations implements BaseTranslations<AppLocale, Translations> {
+class Translations with BaseTranslations<AppLocale, Translations> {
 	/// Returns the current translations of the given [context].
 	///
 	/// Usage:
@@ -153,23 +154,25 @@ class TranslationsSettingsAppSettingsSelfHostedUrlEn {
 	String get not_set => 'Not set';
 }
 
-/// Flat map(s) containing all translations.
+/// The flat map containing all translations for locale <en>.
 /// Only for edge cases! For simple maps, use the map function of this library.
+///
+/// The Dart AOT compiler has issues with very large switch statements,
+/// so the map is split into smaller functions (512 entries each).
 extension on Translations {
 	dynamic _flatMapFunction(String path) {
-		switch (path) {
-			case 'settings.title': return 'Settings';
-			case 'settings.app_settings.title': return 'App Settings';
-			case 'settings.app_settings.selfHostedUrl.title': return 'Self-Hosted URL';
-			case 'settings.app_settings.selfHostedUrl.not_set': return 'Not set';
-			case 'settings.logout': return 'Logout';
-			case 'account.sections.account': return 'Account';
-			case 'under_construction.title': return 'We\'re working on it!';
-			case 'under_construction.description': return 'This feature is not yet available, but we\'re working hard to bring it to you soon.\n\nStay tuned!';
-			case 'more.title': return 'More';
-			case 'actions.delete': return 'Delete';
-			default: return null;
-		}
+		return switch (path) {
+			'settings.title' => 'Settings',
+			'settings.app_settings.title' => 'App Settings',
+			'settings.app_settings.selfHostedUrl.title' => 'Self-Hosted URL',
+			'settings.app_settings.selfHostedUrl.not_set' => 'Not set',
+			'settings.logout' => 'Logout',
+			'account.sections.account' => 'Account',
+			'under_construction.title' => 'We\'re working on it!',
+			'under_construction.description' => 'This feature is not yet available, but we\'re working hard to bring it to you soon.\n\nStay tuned!',
+			'more.title' => 'More',
+			'actions.delete' => 'Delete',
+			_ => null,
+		};
 	}
 }
-

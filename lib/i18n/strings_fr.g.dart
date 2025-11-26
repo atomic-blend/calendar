@@ -3,6 +3,7 @@
 ///
 // coverage:ignore-file
 // ignore_for_file: type=lint, unused_import
+// dart format off
 
 import 'package:flutter/widgets.dart';
 import 'package:intl/intl.dart';
@@ -10,7 +11,7 @@ import 'package:slang/generated.dart';
 import 'strings.g.dart';
 
 // Path: <root>
-class TranslationsFr implements Translations {
+class TranslationsFr with BaseTranslations<AppLocale, Translations> implements Translations {
 	/// You can call this constructor and build your own translation instance of this locale.
 	/// Constructing via the enum [AppLocale.build] is preferred.
 	TranslationsFr({Map<String, Node>? overrides, PluralResolver? cardinalResolver, PluralResolver? ordinalResolver, TranslationMetadata<AppLocale, Translations>? meta})
@@ -130,25 +131,27 @@ class _TranslationsSettingsAppSettingsSelfHostedUrlFr implements TranslationsSet
 	@override String get not_set => 'Non défini';
 }
 
-/// Flat map(s) containing all translations.
+/// The flat map containing all translations for locale <fr>.
 /// Only for edge cases! For simple maps, use the map function of this library.
+///
+/// The Dart AOT compiler has issues with very large switch statements,
+/// so the map is split into smaller functions (512 entries each).
 extension on TranslationsFr {
 	dynamic _flatMapFunction(String path) {
-		switch (path) {
-			case 'settings.title': return 'Paramètres';
-			case 'settings.app_settings.title': return 'Paramètres de l\'application';
-			case 'settings.app_settings.selfHostedUrl.title': return 'URL auto-hébergée';
-			case 'settings.app_settings.selfHostedUrl.not_set': return 'Non défini';
-			case 'settings.logout': return 'Déconnexion';
-			case 'account.sections.account': return 'Compte';
-			case 'under_construction.title': return 'On travaille dessus !';
-			case 'under_construction.description': return 'Cette fonctionnalité est en cours de développement.\n\nRevenez bientôt pour découvrir les dernières mises à jour !';
-			case 'more.title': return 'Plus';
-			case 'actions.save': return 'Enregistrer';
-			case 'actions.cancel': return 'Annuler';
-			case 'actions.delete': return 'Supprimer';
-			default: return null;
-		}
+		return switch (path) {
+			'settings.title' => 'Paramètres',
+			'settings.app_settings.title' => 'Paramètres de l\'application',
+			'settings.app_settings.selfHostedUrl.title' => 'URL auto-hébergée',
+			'settings.app_settings.selfHostedUrl.not_set' => 'Non défini',
+			'settings.logout' => 'Déconnexion',
+			'account.sections.account' => 'Compte',
+			'under_construction.title' => 'On travaille dessus !',
+			'under_construction.description' => 'Cette fonctionnalité est en cours de développement.\n\nRevenez bientôt pour découvrir les dernières mises à jour !',
+			'more.title' => 'Plus',
+			'actions.save' => 'Enregistrer',
+			'actions.cancel' => 'Annuler',
+			'actions.delete' => 'Supprimer',
+			_ => null,
+		};
 	}
 }
-

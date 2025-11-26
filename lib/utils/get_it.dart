@@ -1,6 +1,7 @@
 import 'dart:convert';
 
 import 'package:ab_shared/components/ab_toast.dart';
+import 'package:ab_shared/components/app/window_layout/window_layout_controller.dart';
 import 'package:ab_shared/services/encryption.service.dart';
 import 'package:ab_shared/services/revenue_cat_service.dart';
 import 'package:ab_shared/utils/api_client.dart';
@@ -25,6 +26,10 @@ Future<void> setupGetIt() async {
     getIt.registerSingleton<GlobalKey<NavigatorState>>(
         GlobalKey<NavigatorState>(),
         instanceName: 'rootNavigatorKey');
+  }
+
+  if (!getIt.isRegistered<WindowLayoutController>()) {
+    getIt.registerSingleton<WindowLayoutController>(WindowLayoutController());
   }
 
   if (!getIt.isRegistered<EnvModel>()) {
