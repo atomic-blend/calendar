@@ -252,7 +252,7 @@ jobs:
           platforms: linux/amd64,linux/arm64
           push: false
           tags: |
-            ghcr.io/atomic-blend/template-app:${{ needs.release-rc.outputs.tag }}
+            ghcr.io/atomic-blend/calendar-app:${{ needs.release-rc.outputs.tag }}
   create-github-release:
     needs:
       - release-rc

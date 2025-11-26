@@ -3,12 +3,11 @@ import 'package:flutter/material.dart';
 import 'package:get_it/get_it.dart';
 import 'package:go_router/go_router.dart';
 import 'package:ab_shared/components/app/app_layout.dart';
-import 'package:template/pages/section1/page1/page1.dart';
-import 'package:template/pages/section1/page2/page2.dart';
-import 'package:template/pages/page2/page2.dart';
-import 'package:template/pages/page3/page3.dart';
-import 'package:template/utils/nav_constants.dart';
-
+import 'package:calendar/pages/section1/page1/page1.dart';
+import 'package:calendar/pages/section1/page2/page2.dart';
+import 'package:calendar/pages/page2/page2.dart';
+import 'package:calendar/pages/page3/page3.dart';
+import 'package:calendar/utils/nav_constants.dart';
 part 'app_router.g.dart';
 
 final GlobalKey<NavigatorState> appLayoutNavigatorKey =

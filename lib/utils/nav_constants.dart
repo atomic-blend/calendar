@@ -7,7 +7,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:icons_plus/icons_plus.dart';
 import 'package:shared_preferences/shared_preferences.dart';
-import 'package:template/services/sync.service.dart';
+import 'package:calendar/services/sync.service.dart';
 
 final $navConstants = NavConstants();
 

@@ -3,13 +3,13 @@ import 'package:ab_shared/pages/auth/screens/auth_routes.dart' as auth_routes;
 import 'package:ab_shared/pages/paywall/paywall.dart' as paywall;
 import 'package:ab_shared/utils/env/env.dart';
 import 'package:go_router/go_router.dart';
-import 'package:template/app_router.dart';
-import 'package:template/i18n/strings.g.dart';
+import 'package:calendar/app_router.dart';
+import 'package:calendar/i18n/strings.g.dart';
 import 'package:ab_shared/utils/app_theme.dart';
 import 'package:fleather/l10n/fleather_localizations.g.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
-import 'package:template/utils/get_it.dart';
+import 'package:calendar/utils/get_it.dart';
 
 class App extends StatelessWidget {
   App({super.key});
