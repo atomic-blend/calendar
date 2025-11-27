@@ -2,6 +2,17 @@
 All notable changes to this project will be documented in this file. See [conventional commits](https://www.conventionalcommits.org/) for commit guidelines.
 
 - - -
+## 0.0.2 - 2025-11-27
+#### Bug Fixes
+- change app icon - (57494f5) - Brandon Guigo
+- make the app run - (1e75d03) - Brandon Guigo
+- more renaming - (ce3ee0b) - Brandon Guigo
+#### Miscellaneous Chores
+- change version - (f09c2af) - Brandon Guigo
+- use latest shared package - (ed3a688) - Brandon Guigo
+
+- - -
+
 ## 0.2.2 - 2025-11-07
 #### Bug Fixes
 - merge account and settings into a single page - (44d6045) - Brandon Guigo
