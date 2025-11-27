@@ -2,6 +2,14 @@
 All notable changes to this project will be documented in this file. See [conventional commits](https://www.conventionalcommits.org/) for commit guidelines.
 
 - - -
+## 0.0.7 - 2025-11-27
+#### Bug Fixes
+- android apk path - (dc79028) - Brandon Guigo
+#### Miscellaneous Chores
+- **(release)** 0.0.6 [skip ci] - (544827e) - GitHub Actions
+
+- - -
+
 ## 0.0.6 - 2025-11-27
 #### Bug Fixes
 - dockerfile + configure calendar firebase app for notifications - (3560a1c) - Brandon Guigo
