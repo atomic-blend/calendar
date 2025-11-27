@@ -268,13 +268,13 @@
 			buildConfigurationList = 33CC10FB2044A3C60003C045 /* Build configuration list for PBXNativeTarget "Runner" */;
 			buildPhases = (
 				A0D7782A49A1DE4DA98BA433 /* [CP] Check Pods Manifest.lock */,
-				CB370850894E5056EA3ABB4C /* FlutterFire: "flutterfire bundle-service-file" */,
 				33CC10E92044A3C60003C045 /* Sources */,
 				33CC10EA2044A3C60003C045 /* Frameworks */,
 				33CC10EB2044A3C60003C045 /* Resources */,
 				3399D490228B24CF009A79C7 /* ShellScript */,
 				0C7647A454DDE3B237DCC0F9 /* [CP] Embed Pods Frameworks */,
 				F6202E8F72F063986FD6D306 /* [CP] Copy Pods Resources */,
+				CB370850894E5056EA3ABB4C /* FlutterFire: "flutterfire bundle-service-file" */,
 			);
 			buildRules = (
 			);
