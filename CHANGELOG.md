@@ -2,6 +2,14 @@
 All notable changes to this project will be documented in this file. See [conventional commits](https://www.conventionalcommits.org/) for commit guidelines.
 
 - - -
+## 0.0.4 - 2025-11-27
+#### Bug Fixes
+- remove fvm - (e40f718) - Brandon Guigo
+#### Miscellaneous Chores
+- **(release)** 0.0.3 [skip ci] - (3d2a1d7) - GitHub Actions
+
+- - -
+
 ## 0.0.3 - 2025-11-27
 #### Bug Fixes
 - mac os and ios builds - (cf32aa5) - Brandon Guigo
