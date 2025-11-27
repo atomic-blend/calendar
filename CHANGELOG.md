@@ -2,6 +2,14 @@
 All notable changes to this project will be documented in this file. See [conventional commits](https://www.conventionalcommits.org/) for commit guidelines.
 
 - - -
+## 0.0.5 - 2025-11-27
+#### Bug Fixes
+- comment android debug symbols - (85287dd) - Brandon Guigo
+#### Miscellaneous Chores
+- **(release)** 0.0.4 [skip ci] - (84efff7) - GitHub Actions
+
+- - -
+
 ## 0.0.4 - 2025-11-27
 #### Bug Fixes
 - remove fvm - (e40f718) - Brandon Guigo
