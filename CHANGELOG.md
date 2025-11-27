@@ -2,6 +2,14 @@
 All notable changes to this project will be documented in this file. See [conventional commits](https://www.conventionalcommits.org/) for commit guidelines.
 
 - - -
+## 0.0.3 - 2025-11-27
+#### Bug Fixes
+- mac os and ios builds - (cf32aa5) - Brandon Guigo
+#### Miscellaneous Chores
+- **(release)** 0.0.2 [skip ci] - (da67cdd) - GitHub Actions
+
+- - -
+
 ## 0.0.2 - 2025-11-27
 #### Bug Fixes
 - change app icon - (57494f5) - Brandon Guigo
