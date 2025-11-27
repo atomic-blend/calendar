@@ -2,6 +2,14 @@
 All notable changes to this project will be documented in this file. See [conventional commits](https://www.conventionalcommits.org/) for commit guidelines.
 
 - - -
+## 0.0.6 - 2025-11-27
+#### Bug Fixes
+- dockerfile + configure calendar firebase app for notifications - (3560a1c) - Brandon Guigo
+#### Miscellaneous Chores
+- **(release)** 0.0.5 [skip ci] - (c8dbfc9) - GitHub Actions
+
+- - -
+
 ## 0.0.5 - 2025-11-27
 #### Bug Fixes
 - comment android debug symbols - (85287dd) - Brandon Guigo
