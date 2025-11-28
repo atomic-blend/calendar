@@ -378,7 +378,7 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: android-apk
-          path: build/app/outputs/bundle/prodRelease/app-prod-release.aab
+          path:  build/app/outputs/flutter-apk/app-prod-release.apk
       - name: Upload Android AAB
         uses: actions/upload-artifact@v4
         with:
