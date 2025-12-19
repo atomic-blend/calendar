@@ -490,11 +490,11 @@ class _CalendarState extends State<Calendar> {
           .addAll(taskAppointments.appointments!.cast<CustomAppointment>());
     }
 
-    // Add events
-    final eventAppointments = _getDeviceEvents(calendars);
-    if (eventAppointments.appointments != null) {
-      appointments
-          .addAll(eventAppointments.appointments!.cast<CustomAppointment>());
+    // Add device calendar events
+    final deviceEventsAppointments = _getDeviceEvents(calendars);
+    if (deviceEventsAppointments.appointments != null) {
+      appointments.addAll(
+          deviceEventsAppointments.appointments!.cast<CustomAppointment>());
     }
 
     // Add habits
@@ -516,17 +516,17 @@ class _CalendarState extends State<Calendar> {
       showDialog(
           context: context,
           builder: (context) => Dialog(
-                  child: Container(
-                // startDate: startDate,
-                // endDate: endDate,
-              )));
+              child: Container(
+                  // startDate: startDate,
+                  // endDate: endDate,
+                  )));
     } else {
       showModalBottomSheet(
           isScrollControlled: true,
           context: context,
           builder: (context) => Container(
-                // startDate: startDate,
-                // endDate: endDate,
+              // startDate: startDate,
+              // endDate: endDate,
               ));
     }
   }

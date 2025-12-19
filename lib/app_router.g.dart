@@ -45,6 +45,11 @@ RouteBase get $appRouter => ShellRouteData.$route(
           factory: _$CalendarDayRoute._fromState,
         ),
         GoRouteData.$route(
+          path: '/search',
+          name: 'search',
+          factory: _$Search._fromState,
+        ),
+        GoRouteData.$route(
           path: '/account',
           name: 'account',
           factory: _$AccountRoute._fromState,
@@ -176,6 +181,35 @@ mixin _$CalendarDayRoute on GoRouteData {
   @override
   String get location => GoRouteData.$location(
         '/calendar/day',
+      );
+
+  @override
+  void go(BuildContext context) => context.go(location);
+
+  @override
+  Future<T?> push<T>(BuildContext context) => context.push<T>(location);
+
+  @override
+  void pushReplacement(BuildContext context) =>
+      context.pushReplacement(location);
+
+  @override
+  void replace(BuildContext context) => context.replace(location);
+}
+
+mixin _$Search on GoRouteData {
+  static Search _fromState(GoRouterState state) => Search(
+        from: state.uri.queryParameters['from'],
+      );
+
+  Search get _self => this as Search;
+
+  @override
+  String get location => GoRouteData.$location(
+        '/search',
+        queryParams: {
+          if (_self.from != null) 'from': _self.from,
+        },
       );
 
   @override

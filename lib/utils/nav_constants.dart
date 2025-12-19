@@ -22,14 +22,14 @@ class NavConstants {
           {SharedPreferences? prefs, ApiClient? globalApiClient}) =>
       [
         NavigationItem(
-          key: const Key("section_1"),
-          icon: LineAwesome.file,
-          cupertinoIcon: CupertinoIcons.doc,
-          label: "Section1",
-          location: "/section1",
+          key: const Key("calendars"),
+          icon: LineAwesome.calendar,
+          cupertinoIcon: CupertinoIcons.calendar_today,
+          label: "Calendars",
+          location: "/calendars",
           action: NavigationAction(
             icon: LineAwesome.plus_solid,
-            label: "Action",
+            label: "New event",
             onTap: () {
               showDialog(
                   context: context,
@@ -83,20 +83,12 @@ class NavConstants {
           ],
         ),
         NavigationItem(
-          key: const Key("page_3"),
+          key: const Key("search"),
           icon: LineAwesome.search_solid,
           cupertinoIcon: CupertinoIcons.search,
-          label: "Page 3",
-          location: "/page3",
-          header: _buildHeader(context, "Page 3"),
-        ),
-        NavigationItem(
-          key: const Key("page_4"),
-          icon: LineAwesome.filter_solid,
-          cupertinoIcon: CupertinoIcons.square_fill_line_vertical_square,
-          label: "Page 4",
-          location: "/page4",
-          header: _buildHeader(context, "Page 4"),
+          label: "Search",
+          location: "/search",
+          header: _buildHeader(context, "Search"),
         ),
         NavigationItem(
           key: const Key("account"),
