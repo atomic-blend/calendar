@@ -4,6 +4,10 @@ import 'dart:io';
 import 'package:ab_shared/services/encryption.service.dart';
 import 'package:ab_shared/utils/api_client.dart';
 import 'package:ab_shared/utils/env/env.dart';
+import 'package:calendar/blocs/device_calendar/device_calendar.bloc.dart';
+import 'package:calendar/blocs/habit/habit.bloc.dart';
+import 'package:calendar/blocs/tasks/tasks.bloc.dart';
+import 'package:calendar/entities/device_calendar/device_calendar.dart';
 import 'package:flutter_age/flutter_age.dart';
 import 'package:calendar/blocs/app/app.bloc.dart';
 import 'package:ab_shared/blocs/auth/auth.bloc.dart';
@@ -101,6 +105,9 @@ FutureOr<void> main() async {
                         getIt.registerSingleton<EncryptionService>(e);
                       },
                     )),
+            BlocProvider(create: (context) => HabitBloc()),
+            BlocProvider(create: (context) => TasksBloc()),
+            BlocProvider(create: (context) => DeviceCalendarBloc()),
           ],
           child: ab_shared_translations.TranslationProvider(
             child:

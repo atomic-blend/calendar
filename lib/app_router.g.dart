@@ -16,23 +16,33 @@ RouteBase get $appRouter => ShellRouteData.$route(
       routes: [
         GoRouteData.$route(
           path: '/',
-          name: 'page1',
-          factory: _$Page1Route._fromState,
+          name: 'home',
+          factory: _$HomeRoute._fromState,
         ),
         GoRouteData.$route(
-          path: '/page2',
-          name: 'page2',
-          factory: _$Section1Page2._fromState,
+          path: '/calendar/week',
+          name: 'calendar_week',
+          factory: _$CalendarWeekRoute._fromState,
         ),
         GoRouteData.$route(
-          path: '/page3',
-          name: 'page3',
-          factory: _$Page2._fromState,
+          path: '/calendar/schedule',
+          name: 'calendar_schedule',
+          factory: _$CalendarScheduleRoute._fromState,
         ),
         GoRouteData.$route(
-          path: '/page4',
-          name: 'page4',
-          factory: _$Page3._fromState,
+          path: '/calendar/three-days',
+          name: 'calendar_three_days',
+          factory: _$CalendarThreeDaysRoute._fromState,
+        ),
+        GoRouteData.$route(
+          path: '/calendar/month',
+          name: 'calendar_month',
+          factory: _$CalendarMonthRoute._fromState,
+        ),
+        GoRouteData.$route(
+          path: '/calendar/day',
+          name: 'calendar_day',
+          factory: _$CalendarDayRoute._fromState,
         ),
         GoRouteData.$route(
           path: '/account',
@@ -46,19 +56,12 @@ extension $AppRouterExtension on AppRouter {
   static AppRouter _fromState(GoRouterState state) => AppRouter();
 }
 
-mixin _$Page1Route on GoRouteData {
-  static Page1Route _fromState(GoRouterState state) => Page1Route(
-        from: state.uri.queryParameters['from'],
-      );
-
-  Page1Route get _self => this as Page1Route;
+mixin _$HomeRoute on GoRouteData {
+  static HomeRoute _fromState(GoRouterState state) => HomeRoute();
 
   @override
   String get location => GoRouteData.$location(
         '/',
-        queryParams: {
-          if (_self.from != null) 'from': _self.from,
-        },
       );
 
   @override
@@ -75,19 +78,13 @@ mixin _$Page1Route on GoRouteData {
   void replace(BuildContext context) => context.replace(location);
 }
 
-mixin _$Section1Page2 on GoRouteData {
-  static Section1Page2 _fromState(GoRouterState state) => Section1Page2(
-        from: state.uri.queryParameters['from'],
-      );
-
-  Section1Page2 get _self => this as Section1Page2;
+mixin _$CalendarWeekRoute on GoRouteData {
+  static CalendarWeekRoute _fromState(GoRouterState state) =>
+      CalendarWeekRoute();
 
   @override
   String get location => GoRouteData.$location(
-        '/page2',
-        queryParams: {
-          if (_self.from != null) 'from': _self.from,
-        },
+        '/calendar/week',
       );
 
   @override
@@ -104,19 +101,13 @@ mixin _$Section1Page2 on GoRouteData {
   void replace(BuildContext context) => context.replace(location);
 }
 
-mixin _$Page2 on GoRouteData {
-  static Page2 _fromState(GoRouterState state) => Page2(
-        from: state.uri.queryParameters['from'],
-      );
-
-  Page2 get _self => this as Page2;
+mixin _$CalendarScheduleRoute on GoRouteData {
+  static CalendarScheduleRoute _fromState(GoRouterState state) =>
+      CalendarScheduleRoute();
 
   @override
   String get location => GoRouteData.$location(
-        '/page3',
-        queryParams: {
-          if (_self.from != null) 'from': _self.from,
-        },
+        '/calendar/schedule',
       );
 
   @override
@@ -133,19 +124,58 @@ mixin _$Page2 on GoRouteData {
   void replace(BuildContext context) => context.replace(location);
 }
 
-mixin _$Page3 on GoRouteData {
-  static Page3 _fromState(GoRouterState state) => Page3(
-        from: state.uri.queryParameters['from'],
-      );
-
-  Page3 get _self => this as Page3;
+mixin _$CalendarThreeDaysRoute on GoRouteData {
+  static CalendarThreeDaysRoute _fromState(GoRouterState state) =>
+      CalendarThreeDaysRoute();
 
   @override
   String get location => GoRouteData.$location(
-        '/page4',
-        queryParams: {
-          if (_self.from != null) 'from': _self.from,
-        },
+        '/calendar/three-days',
+      );
+
+  @override
+  void go(BuildContext context) => context.go(location);
+
+  @override
+  Future<T?> push<T>(BuildContext context) => context.push<T>(location);
+
+  @override
+  void pushReplacement(BuildContext context) =>
+      context.pushReplacement(location);
+
+  @override
+  void replace(BuildContext context) => context.replace(location);
+}
+
+mixin _$CalendarMonthRoute on GoRouteData {
+  static CalendarMonthRoute _fromState(GoRouterState state) =>
+      CalendarMonthRoute();
+
+  @override
+  String get location => GoRouteData.$location(
+        '/calendar/month',
+      );
+
+  @override
+  void go(BuildContext context) => context.go(location);
+
+  @override
+  Future<T?> push<T>(BuildContext context) => context.push<T>(location);
+
+  @override
+  void pushReplacement(BuildContext context) =>
+      context.pushReplacement(location);
+
+  @override
+  void replace(BuildContext context) => context.replace(location);
+}
+
+mixin _$CalendarDayRoute on GoRouteData {
+  static CalendarDayRoute _fromState(GoRouterState state) => CalendarDayRoute();
+
+  @override
+  String get location => GoRouteData.$location(
+        '/calendar/day',
       );
 
   @override
