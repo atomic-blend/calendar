@@ -1,15 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 
-part 'page2.g.dart';
+part 'search.g.dart';
 
-@TypedGoRoute<Page2>(path: '')
-class Page2 extends GoRouteData with _$Page2 {
-  Page2({this.from});
+@TypedGoRoute<Search>(path: '')
+class Search extends GoRouteData with _$Search {
+  Search({this.from});
   final String? from;
 
   @override
   Widget build(BuildContext context, GoRouterState state) {
-    return Text("page 2");
+    return Text("search");
   }
 }

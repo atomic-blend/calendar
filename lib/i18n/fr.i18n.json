@@ -26,5 +26,85 @@
     "save": "Enregistrer",
     "cancel": "Annuler",
     "delete": "Supprimer"
+  },
+  "calendar": {
+    "title": "Calendrier",
+    "month": "Mois",
+    "day": "Jour",
+    "threeDays": "3 jours",
+    "week": "Semaine",
+    "schedule": "Emploi du temps",
+    "errors": {
+      "cannot_move_device_calendar_event": "Vous ne pouvez pas déplacer un événement de calendrier d'appareil",
+      "cannot_move_habit_event": "Vous ne pouvez pas déplacer un événement d'habitude",
+      "cannot_resize_device_calendar_event": "Vous ne pouvez pas redimensionner un événement de calendrier d'appareil",
+      "cannot_resize_habit_event": "Vous ne pouvez pas redimensionner un événement d'habitude"
+    },
+    "event_detail": {
+      "date": "Date",
+      "time": "Heure",
+      "organizer": "Organisateur",
+      "reminders": "Rappels",
+      "details": "Détails",
+      "join_meeting": "Rejoindre la réunion",
+      "google_meet_call": "Appel Meet Call",
+      "zoom_meet_call": "Appel Zoom",
+      "ms_teams_call": "Appel MS Teams",
+      "join_now": "Rejoindre maintenant",
+      "attendee": {
+        "zero": "Participant",
+        "one": "Participant",
+        "other": "Participants"
+      }
+    },
+    "settings": {
+      "title": "Paramètres du calendrier",
+      "display_habits": "Afficher les habitudes"
+    }
+  },
+  "time_units": {
+    "short": {
+      "day": "j",
+      "hour": "h",
+      "minute": "m"
+    },
+    "long": {
+      "day": {
+        "zero": "jour",
+        "one": "jour",
+        "other": "jours"
+      },
+      "hour": {
+        "zero": "heure",
+        "one": "heure",
+        "other": "heures"
+      },
+      "minute": {
+        "zero": "minute",
+        "one": "minute",
+        "other": "minutes"
+      }
+    }
+  },
+  "habits": {
+    "frequency(map)": {
+      "daily": "Journalier",
+      "weekly": "Hebdomadaire",
+      "monthly": "Mensuel",
+      "repeatition": "Répétition"
+    },
+    "times_a_day": "${nb} fois par jour",
+    "times_a_week": "${nb} fois par semaine",
+    "times_a_month": "${nb} fois par mois"
+  },
+  "tasks": {
+    "due_dates": {
+      "today": "Aujourd'hui",
+      "tomorrow": "Demain",
+      "this_week": "Cette semaine",
+      "next_week": "La semaine prochaine",
+      "later": "Plus tard",
+      "no_due_date": "Pas de date d'échéance"
+    }
   }
 }
