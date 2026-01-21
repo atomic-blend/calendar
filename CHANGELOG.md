@@ -2,6 +2,21 @@
 All notable changes to this project will be documented in this file. See [conventional commits](https://www.conventionalcommits.org/) for commit guidelines.
 
 - - -
+## 0.1.0 - 2026-01-21
+
+- - -
+
+## 0.1.0-rc-f2699d4 - 2026-01-21
+#### Bug Fixes
+- linter - (9f436df) - Brandon Guigo
+#### Features
+- update nav items for the calendar app, so I can release a first version - (0d0f3fe) - Brandon Guigo
+- add calendar like it's inside the task app (for tasks and habits) - (ac94c04) - Brandon Guigo
+#### Miscellaneous Chores
+- **(release)** 0.0.8 [skip ci] - (43ca7ad) - GitHub Actions
+
+- - -
+
 ## 0.0.8 - 2025-11-28
 #### Bug Fixes
 - build apk with fastlane - (73e1835) - Brandon Guigo
