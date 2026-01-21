@@ -1,33 +1,27 @@
 // GENERATED CODE - DO NOT MODIFY BY HAND
 
-part of 'page2.dart';
+part of 'home.dart';
 
 // **************************************************************************
 // GoRouterGenerator
 // **************************************************************************
 
 List<RouteBase> get $appRoutes => [
-      $page2,
+      $homeRoute,
     ];
 
-RouteBase get $page2 => GoRouteData.$route(
-      path: '',
-      factory: _$Page2._fromState,
+RouteBase get $homeRoute => GoRouteData.$route(
+      path: '/',
+      name: 'home',
+      factory: _$HomeRoute._fromState,
     );
 
-mixin _$Page2 on GoRouteData {
-  static Page2 _fromState(GoRouterState state) => Page2(
-        from: state.uri.queryParameters['from'],
-      );
-
-  Page2 get _self => this as Page2;
+mixin _$HomeRoute on GoRouteData {
+  static HomeRoute _fromState(GoRouterState state) => HomeRoute();
 
   @override
   String get location => GoRouteData.$location(
-        '',
-        queryParams: {
-          if (_self.from != null) 'from': _self.from,
-        },
+        '/',
       );
 
   @override

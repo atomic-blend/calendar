@@ -24,5 +24,85 @@
   },
   "actions": {
     "delete": "Delete"
+  },
+  "calendar": {
+    "title": "Calendar",
+    "month": "Month",
+    "day": "Day",
+    "threeDays": "3 Days",
+    "week": "Week",
+    "schedule": "Schedule",
+    "errors": {
+      "cannot_move_device_calendar_event": "You cannot move a device calendar event",
+      "cannot_move_habit_event": "You cannot move a habit event",
+      "cannot_resize_device_calendar_event": "You cannot resize a device calendar event",
+      "cannot_resize_habit_event": "You cannot resize a habit event"
+    },
+    "event_detail": {
+      "date": "Date",
+      "time": "Time",
+      "organizer": "Organizer",
+      "reminders": "Reminder",
+      "details": "Details",
+      "join_meeting": "Join meeting",
+      "google_meet_call": "Google Meet Call",
+      "zoom_meet_call": "Zoom Call",
+      "ms_teams_call": "MS Teams Call",
+      "join_now": "Join now",
+      "attendee": {
+        "zero": "Attendee",
+        "one": "Attendee",
+        "other": "Attendees"
+      }
+    },
+    "settings": {
+      "title": "Calendar Settings",
+      "display_habits": "Display habits"
+    }
+  },
+  "time_units": {
+    "short": {
+      "day": "d",
+      "hour": "h",
+      "minute": "m"
+    },
+    "long": {
+      "day": {
+        "zero": "days",
+        "one": "day",
+        "other": "days"
+      },
+      "hour": {
+        "zero": "hours",
+        "one": "hour",
+        "other": "hours"
+      },
+      "minute": {
+        "zero": "minutes",
+        "one": "minute",
+        "other": "minutes"
+      }
+    }
+  },
+  "habits": {
+    "frequency(map)": {
+      "daily": "Daily",
+      "weekly": "Weekly",
+      "monthly": "Monthly",
+      "repeatition": "Repetition"
+    },
+    "times_a_day": "${nb} times a day",
+    "times_a_week": "${nb} times a week",
+    "times_a_month": "${nb} times a month"
+  },
+  "tasks": {
+    "due_dates": {
+      "today": "Today",
+      "tomorrow": "Tomorrow",
+      "this_week": "This week",
+      "next_week": "Next week",
+      "later": "Later",
+      "no_due_date": "No due date"
+    }
   }
 }
