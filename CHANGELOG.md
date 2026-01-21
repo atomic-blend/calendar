@@ -2,6 +2,18 @@
 All notable changes to this project will be documented in this file. See [conventional commits](https://www.conventionalcommits.org/) for commit guidelines.
 
 - - -
+## 0.1.1 - 2026-01-21
+
+- - -
+
+## 0.1.1-rc-39da57e - 2026-01-21
+#### Bug Fixes
+- temporarily disable ios / mac os cicd publishing - (55724fa) - Brandon Guigo
+#### Miscellaneous Chores
+- **(release)** 0.1.0 [skip ci] - (834a38d) - GitHub Actions
+
+- - -
+
 ## 0.1.0 - 2026-01-21
 
 - - -
